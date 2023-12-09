@@ -1,14 +1,13 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 import "./App.css";
 import Routers from "./assets/Routers/Routers";
 import Nav from "./assets/components/Nav/Nav";
 import Alert from "./assets/components/UX/Alert/Alert";
-import RegisterModal from "./assets/components/Modals/registerModal";
 import CommentsModal from "./assets/components/Modals/CommentsModal";
-import { useLocation } from "react-router-dom";
 import DeletePostModal from "./assets/components/Modals/DeletePostModal";
 import PostModal from "./assets/components/Modals/PostModal";
 import LoginModal from "./assets/components/Modals/LoginModal";
+import RegisterModal from "./assets/components/Modals/RegisterModal";
 
 export const ContextProv = createContext();
 
