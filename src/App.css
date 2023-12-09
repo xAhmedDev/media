@@ -1,0 +1,152 @@
+@import url("./assets/components/UX/Alert/Alert.css");
+@import url("./assets/components/UX/Loader/Loader.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: rgb(108, 117, 125) !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+@media (max-width: 1200px) {
+  .card-body {
+    padding-top: 30px !important;
+  }
+  .card-body .user-info {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem;
+  }
+
+  .user-profile-card {
+    flex-direction: column;
+    flex-wrap: wrap !important;
+  }
+  .user-profile-card-img,
+  .user-profile-card-info {
+    width: 100% !important;
+  }
+
+  .user-profile-card-img img,
+  .user-profile-card-img {
+    border-radius: 0.375rem !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .toast {
+    padding: 10px 0px 15px 5px;
+    min-width: fit-content !important;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .card {
+    width: 100%;
+  }
+  .addPost {
+    bottom: 30px !important;
+    transform: translateX(0%) !important;
+  }
+
+  .toast.show {
+    transform: translateX(50%);
+  }
+
+  .must-login-h2 {
+    font-size: 30px !important;
+  }
+
+  .must-login-alert {
+    gap: 20px !important;
+    flex-direction: column !important;
+    padding: 20px 90px !important;
+  }
+}
+
+input.clicked:invalid,
+input.invalidRepeatPassword,
+input.clicked:invalid:focus,
+input.invalidRepeatPassword:focus {
+  border: 1px solid #ea868f;
+  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}
+
+.post-time {
+  font-size: 12px !important;
+  letter-spacing: 1px;
+  color: rgb(179 179 179);
+  margin-left: 15px;
+}
+
+.modal-footer {
+  flex-wrap: nowrap !important;
+}
+.modal-content {
+  max-height: 80vh;
+}
+
+.comment-card {
+  width: fit-content;
+}
+
+.comments-btn,
+.posts-btn,
+.nav-link,
+img {
+  user-select: none;
+}
+
+@media (max-width: 1200px) {
+  .card-body {
+    padding-top: 30px !important;
+  }
+  .card-body .user-info {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem;
+  }
+
+  .user-profile-card {
+    flex-direction: column;
+    flex-wrap: wrap !important;
+  }
+  .user-profile-card-img,
+  .user-profile-card-info {
+    width: 100% !important;
+  }
+
+  .user-profile-card-img img,
+  .user-profile-card-img {
+    border-radius: 0.375rem !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .toast {
+    padding: 10px 0px 15px 5px;
+    min-width: fit-content !important;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .card {
+    width: 100%;
+  }
+  .addPost {
+    bottom: 30px !important;
+    transform: translateX(0%) !important;
+  }
+
+  .toast.show {
+    transform: translateX(50%);
+  }
+}

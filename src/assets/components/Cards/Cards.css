@@ -1,0 +1,37 @@
+.comments-btn span {
+  transition: 0.2s opacity;
+}
+
+.comments-btn:hover > span {
+  opacity: 0.7 !important;
+}
+
+.post-image {
+  max-height: 65dvh !important;
+}
+
+.dropdown-btn {
+  position: absolute;
+  right: 0;
+  background: #f7f7f7 !important;
+  border: none !important;
+  color: gray !important;
+  font-size: 30px !important;
+  padding: 5px 15px 0 15px !important;
+}
+
+.dropdown-menu {
+  background: transparent !important;
+  border: none !important;
+}
+
+.dropdown-item {
+  text-align: center !important;
+  padding: 10px !important;
+  border-radius: 10px !important;
+  color: white !important;
+}
+
+.dropdown-item:first-child {
+  margin-bottom: 15px;
+}

@@ -1,0 +1,92 @@
+.toast {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  padding: 20px 35px 20px 25px;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+  max-width: 500px !important;
+  transform: translateX(150%);
+  z-index: 999999;
+  min-width: fit-content;
+}
+
+
+
+.toast.show {
+  transform: translateX(0%);
+}
+
+.toast .toast-content {
+  display: flex;
+  align-items: center;
+}
+
+.toast .toast-content i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  min-width: 35px;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.toast.success .toast-content i {
+  background-color: #198754;
+}
+.toast.error .toast-content i {
+  background-color: #dc3545;
+}
+
+.toast-content .message {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.message .text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.message .text.text-1 {
+  font-weight: 600;
+  color: #333;
+}
+
+.toast .progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+}
+
+.toast .progress:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.toast.success .progress:before {
+  background-color: #198754;
+}
+.toast.error .progress:before {
+  background-color: #dc3545;
+}
+
+.progress.active:before {
+  animation: progress 2s linear forwards;
+}
+
+@keyframes progress {
+  100% {
+    right: 100%;
+  }
+}
